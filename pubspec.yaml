@@ -1,0 +1,222 @@
+name: jogodacobrinha
+description: "RPG Game."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.6
+  #flame: ^1.17.0
+  gamepads: ^0.1.1
+  flame_splash_screen: ^0.3.0
+  flutter_fortune_wheel: ^1.3.1
+  audioplayers: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+  flame: ^1.17.0
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/misc/topwall.png
+    - assets/misc/walltop.png
+    - assets/misc/walllefttop.png
+    - assets/misc/wallrigrow.png
+    - assets/misc/walllefrow.png
+    - assets/misc/wallrighttop.png
+    - assets/misc/wallbotrowlef.png
+    - assets/misc/wallbotrowrig.png
+    - assets/misc/wallbotrow.png
+    - assets/misc/wallcavernrow.png
+    - assets/misc/wall.png
+    - assets/misc/wallleft.png
+    - assets/misc/wallright.png
+    - assets/images/castleknight.jpeg
+    - assets/images/castleguardiancursed.jpeg
+    - assets/items/sword1.png
+    - assets/items/helmet1.png
+    - assets/items/body1.png
+    - assets/items/pants1.png
+    - assets/items/boots1.png
+    - assets/items/empty_slot.png
+    - assets/images/shopping.jpeg
+    - assets/images/potionshop.jpg
+    - assets/images/gifttest.jpg
+    - assets/interface/hudh.png
+    - assets/interface/heart.png
+    - assets/interface/goldp.png
+    - assets/interface/goldi.png
+    - assets/images/earth.gif
+    - assets/images/jo.jpg
+    - assets/images/ken.jpg
+    - assets/images/po.jpg
+    - assets/dungeon/casttle1.png
+    - assets/dungeon/casttle2.png
+    - assets/dungeon/mushroom.gif
+    - assets/dungeon/casttle4.png                 
+    - assets/dungeon/portal.png  
+    - assets/misc/ground1.png
+    - assets/misc/ground2.png
+    - assets/misc/ground3.png
+    - assets/misc/ground4.png
+    - assets/misc/mush.gif
+    - assets/dungeon/gift.png
+    - assets/dungeon/portal2.png
+    - assets/dungeon/merchant.png
+    - assets/images/background.png
+    - assets/images/ground_tile.png
+    - assets/maps/worldmappopulis.png
+    - assets/images/explosion.png
+    - assets/images/sword.png
+    - assets/cadeado.png
+    - assets/cadeado_quebrado.png
+    - assets/combat/loading.gif
+    - assets/combat/guerreiro.gif
+    - assets/combat/guerreiro2.gif
+    - assets/combat/mago1.gif
+    - assets/combat/caveiro1.gif
+    - assets/combat/caveiro2.gif
+    - assets/combat/badrobot.gif
+    - assets/combat/firedmg.gif
+    - assets/combat/waterdmg.gif
+    - assets/combat/sworddmg.gif
+    - assets/combat/greenslime.gif
+    - assets/combat/bushMonster.gif
+    - assets/combat/bat.gif
+    - assets/combat/mushroom.gif
+    - assets/combat/waterradioactiv.gif
+    - assets/combat/dadovermelho.png
+    - assets/combat/golemradio.gif
+    - assets/combat/golemradio2.gif
+    - assets/combat/dadoamarelo.png
+    - assets/sound/tap.mp3
+    - assets/sound/click_sound.wav
+    - assets/images/
+    - assets/sound/rolling-dice.mp3
+    - assets/combat/backmasmorra.png
+    - assets/combat/backmasmorra3.png
+    - assets/combat/background2.png
+    - assets/images/playerfront.png
+    - assets/images/playerback.png
+    - assets/images/playerright.png
+    - assets/images/playerleft.png
+    - assets/screens/newgame.png
+    - assets/screens/newgame.gif
+    - assets/screens/SpaceBackground.png
+    - assets/screens/credits.png
+    - assets/screens/config.png
+    - assets/enemys/MantisFront.gif
+    - assets/enemys/MantisBack.gif
+    - assets/enemys/MantisRight.gif
+    - assets/enemys/MantisLeft.gif    
+    - assets/enemys/beatlefront.png
+    - assets/enemys/beatleback.png
+    - assets/enemys/beatleright.png
+    - assets/enemys/beatleleft.png
+    - assets/enemys/beatlefront.gif
+    - assets/enemys/beatleback.gif
+    - assets/enemys/beatleright.gif
+    - assets/enemys/beatleleft.gif
+    - assets/misc/groundhouse.png
+    - assets/misc/hwall.png
+    - assets/misc/hwallright.png    
+    - assets/misc/hwallleft.png        
+    - assets/misc/cground1.png
+    - assets/misc/cground2.png
+    - assets/misc/cground3.png
+    - assets/misc/cground4.png
+    - assets/misc/cground5.png
+    - assets/misc/cground6.png
+    - assets/misc/cground7.png
+    - assets/misc/cground8.png
+    - assets/misc/cground9.png
+    - assets/misc/cground10.png
+    - assets/misc/cwall.png
+    - assets/misc/cwallt.png
+    - assets/misc/cwallb.png
+    - assets/misc/wallout.png
+    - assets/misc/ccemen1.png
+    - assets/misc/ccemen2.png
+    - assets/misc/ccemen3.png
+    - assets/misc/ccemen4.png
+    - assets/misc/crooft1.png
+    - assets/misc/cwalldooro.png
+    - assets/misc/cwalldoorc.png
+    - assets/misc/croofrig1.png
+    - assets/misc/croofrig2.png
+    - assets/misc/crooflef1.png
+    - assets/misc/crooflef2.png
+    - assets/misc/sink1.png
+    - assets/misc/sink2.png
+    - assets/misc/bed1.png
+    - assets/misc/bed2.png
+    - assets/misc/pc1.png
+    - assets/misc/pc2.gif
+    - assets/misc/doorm.png
+    - assets/misc/plant1.png
+    - assets/misc/chair1.png
+    - assets/misc/hwalldoor.png
+    - assets/misc/hwallext.png
+
+
+
+
+
+
+
+    
+  #   - images/a_dot_ham.jpeg
+  fonts:
+    - family: PixelifySans
+      fonts:
+        - asset: assets/fonts/PixelifySans-VariableFont_wght.ttf
